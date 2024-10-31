@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		8CB6132E2CD3038000DF387C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB6132D2CD3038000DF387C /* AppDelegate.swift */; };
 		8CB613302CD3038000DF387C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB6132F2CD3038000DF387C /* SceneDelegate.swift */; };
-		8CB613322CD3038000DF387C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB613312CD3038000DF387C /* ViewController.swift */; };
+		8CB613322CD3038000DF387C /* VideoScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB613312CD3038000DF387C /* VideoScreenViewController.swift */; };
 		8CB613352CD3038000DF387C /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 8CB613342CD3038000DF387C /* Base */; };
 		8CB613382CD3038000DF387C /* MoodMe_iOSAssignment.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8CB613362CD3038000DF387C /* MoodMe_iOSAssignment.xcdatamodeld */; };
 		8CB6133A2CD3038300DF387C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CB613392CD3038300DF387C /* Assets.xcassets */; };
@@ -17,6 +17,9 @@
 		8CB613482CD3038300DF387C /* MoodMe_iOSAssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB613472CD3038300DF387C /* MoodMe_iOSAssignmentTests.swift */; };
 		8CB613522CD3038400DF387C /* MoodMe_iOSAssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB613512CD3038400DF387C /* MoodMe_iOSAssignmentUITests.swift */; };
 		8CB613542CD3038400DF387C /* MoodMe_iOSAssignmentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB613532CD3038400DF387C /* MoodMe_iOSAssignmentUITestsLaunchTests.swift */; };
+		8CB613612CD3084C00DF387C /* RecordingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB613602CD3084C00DF387C /* RecordingManager.swift */; };
+		8CB613622CD3084C00DF387C /* RecordingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB613602CD3084C00DF387C /* RecordingManager.swift */; };
+		8CB613632CD3084C00DF387C /* RecordingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB613602CD3084C00DF387C /* RecordingManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +43,7 @@
 		8CB6132A2CD3038000DF387C /* MoodMe_iOSAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoodMe_iOSAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CB6132D2CD3038000DF387C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CB6132F2CD3038000DF387C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8CB613312CD3038000DF387C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8CB613312CD3038000DF387C /* VideoScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoScreenViewController.swift; sourceTree = "<group>"; };
 		8CB613342CD3038000DF387C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8CB613372CD3038000DF387C /* MoodMe_iOSAssignment.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MoodMe_iOSAssignment.xcdatamodel; sourceTree = "<group>"; };
 		8CB613392CD3038300DF387C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +54,7 @@
 		8CB6134D2CD3038400DF387C /* MoodMe_iOSAssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoodMe_iOSAssignmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CB613512CD3038400DF387C /* MoodMe_iOSAssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodMe_iOSAssignmentUITests.swift; sourceTree = "<group>"; };
 		8CB613532CD3038400DF387C /* MoodMe_iOSAssignmentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodMe_iOSAssignmentUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8CB613602CD3084C00DF387C /* RecordingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +105,13 @@
 		8CB6132C2CD3038000DF387C /* MoodMe_iOSAssignment */ = {
 			isa = PBXGroup;
 			children = (
+				8CB613662CD31AAF00DF387C /* ViewModel */,
+				8CB613652CD31AA500DF387C /* View */,
+				8CB613642CD31A9500DF387C /* Model */,
 				8CB6132D2CD3038000DF387C /* AppDelegate.swift */,
 				8CB6132F2CD3038000DF387C /* SceneDelegate.swift */,
-				8CB613312CD3038000DF387C /* ViewController.swift */,
-				8CB613332CD3038000DF387C /* Main.storyboard */,
 				8CB613392CD3038300DF387C /* Assets.xcassets */,
-				8CB6133B2CD3038300DF387C /* LaunchScreen.storyboard */,
 				8CB6133E2CD3038300DF387C /* Info.plist */,
-				8CB613362CD3038000DF387C /* MoodMe_iOSAssignment.xcdatamodeld */,
 			);
 			path = MoodMe_iOSAssignment;
 			sourceTree = "<group>";
@@ -128,6 +131,32 @@
 				8CB613532CD3038400DF387C /* MoodMe_iOSAssignmentUITestsLaunchTests.swift */,
 			);
 			path = MoodMe_iOSAssignmentUITests;
+			sourceTree = "<group>";
+		};
+		8CB613642CD31A9500DF387C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8CB613362CD3038000DF387C /* MoodMe_iOSAssignment.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8CB613652CD31AA500DF387C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8CB613332CD3038000DF387C /* Main.storyboard */,
+				8CB6133B2CD3038300DF387C /* LaunchScreen.storyboard */,
+				8CB613312CD3038000DF387C /* VideoScreenViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8CB613662CD31AAF00DF387C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8CB613602CD3084C00DF387C /* RecordingManager.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,9 +290,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CB613322CD3038000DF387C /* ViewController.swift in Sources */,
+				8CB613322CD3038000DF387C /* VideoScreenViewController.swift in Sources */,
 				8CB6132E2CD3038000DF387C /* AppDelegate.swift in Sources */,
 				8CB613302CD3038000DF387C /* SceneDelegate.swift in Sources */,
+				8CB613612CD3084C00DF387C /* RecordingManager.swift in Sources */,
 				8CB613382CD3038000DF387C /* MoodMe_iOSAssignment.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,6 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CB613482CD3038300DF387C /* MoodMe_iOSAssignmentTests.swift in Sources */,
+				8CB613622CD3084C00DF387C /* RecordingManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +312,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CB613542CD3038400DF387C /* MoodMe_iOSAssignmentUITestsLaunchTests.swift in Sources */,
+				8CB613632CD3084C00DF387C /* RecordingManager.swift in Sources */,
 				8CB613522CD3038400DF387C /* MoodMe_iOSAssignmentUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
